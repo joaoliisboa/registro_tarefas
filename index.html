@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas Diárias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Tarefas Diárias</h1>
+    
+    <div>
+        <label for="nomeTarefa">Nome da Tarefa: </label>
+        <input type="text" id="nomeTarefa">
+        <button onclick="comecarTarefa()">Começar Tarefa</button>
+    </div>
+
+    <div class="lista-tarefa">
+        <h2>Tarefas</h2>
+        <ul id="listaTarefa"></ul>
+    </div>
+
+    <div class="estatisticas">
+        <h2>Estatísticas</h2>
+        <p>Número de Tarefas Iniciadas: <span id="tarefasIniciadas">0</span></p>
+        <p>Número de Tarefas Finalizadas: <span id="tarefasCompletas">0</span></p>
+        <p>Tempo Total Gasto (em minutos): <span id="tempoCastoTotal">0</span></p>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
